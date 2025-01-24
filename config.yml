@@ -1,0 +1,7 @@
+# All of our configuration settings needed
+threads: 4
+memory_limit: 10GB
+enable_progress_bar: TRUE
+max_parallelism: 8
+db_file_location: db/data.db
+
