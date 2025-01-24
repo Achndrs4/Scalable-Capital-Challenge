@@ -6,7 +6,7 @@ An ETL Pipeline which reads in a JSON file with music data, and puts it into a s
 ## Prerequisites
 - Docker
 ## Instructions
-- Simply run make build to run the entire ETL pipeline. See makefile for more commands
+- Simply run make build to run the entire ETL pipeline.
 ## Design Decisions
 - There are several design considerations that have to be made for this example problem that are probably less likely to occur in enterprise settings. For me these included
   - Not having access to a Kubernetes cluster or Airflow to run this job, as Kubernetes is set up to handle job orchestration. 

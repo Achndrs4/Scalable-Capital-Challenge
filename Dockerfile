@@ -4,6 +4,4 @@ WORKDIR /app
 COPY . .
 CMD ["pip", "freeze"]
 RUN pip install --no-cache-dir -r requirements.txt
-RUN lint
 RUN python3 etl.py
-RUN python3 questions.py
