@@ -22,8 +22,6 @@ class MyTestCase(unittest.TestCase):
     def testQ1b(self):
         q1b = self.adapter.dataframe_from_sql_file("sql/question_1_b.sql")
         self.assertEqual(len(q1b), 1)
-    # TODO: Test the other functions
-
     def tearDown(self):
         self.adapter.close()
 if __name__ == '__main__':

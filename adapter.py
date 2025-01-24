@@ -1,14 +1,12 @@
 import logging
-
-import pandas
-import pandas as pd
 import duckdb
 import yaml
 
 class DuckDBAdapter:
     def __init__(self, config_file: str = None):
         """
-        Initialize the DuckDBAdapter with a connection to a disk-based database and optional configuration.
+        Initialize the DuckDBAdapter with a connection to a disk-based database
+        and optional configuration.
 
         :param config_file: Path to a YAML configuration file. Defaults to None.
         """
@@ -37,7 +35,8 @@ class DuckDBAdapter:
 
     def apply_config(self):
         """
-        Apply configuration settings (like thread count, memory limit, etc.) to the DuckDB connection.
+        Apply configuration settings (like thread count, memory limit, etc.)
+        to the DuckDB connection.
         """
         if self.config:
             # Apply general execution parameters
